@@ -42,49 +42,76 @@ Distribution of median housing prices for the top 25 zipcodes.
 
 Looking at the raw data for 5 random zipcodes within the top 25 zipcodes.
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/FiveRandomZipcodes.png" width="500">
+
 We can see that Idaho housing market was also affected by the 2008 crash. Because of this we will start our modeling from 2011 so that the crash does not affect our model.
 
 This is a map of the top 25 zipcodes. It is important to note that the color values for the latest historic 5 year ROI has changed since the previous map.
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/25BestROIMap.png" width="500">
 
 
 
 ## Top 5 zipcodes
 ### Zipcode 83858
+
+The graph below shows how the trained model did when predicting the test data. The test data was 6 months and we can see that initially the model did well at predicting the first couple months but failed to predict the sudden increase. Even though it was not able to predict the sudden increase the test values stayed within the 95% confidence interval shown within the green shaded area. The RMSE for this test prediction was $3,602.40
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/TestPrediction83858.png" width="500">
+
+The graph below shows the final model and the predicted one year values based off of the current data we have. The output below the graph shows the price predicted and the low/high predictions for the 95% confidence interval. Using these values the 1 year ROI as well as the low/high 1 year ROI was calculated.
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/FinalModel83858.png" width="500">
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/83858Results.png" width="500">
 
-(Insert training graph)
-(Insert Final graph)
+
 
 ### Zipcode 83605
+
+The graph below shows how the trained model did when predicting the test data. The test data was 6 months and we can see that the model was able to predict the price fairly well. The RMSE for this test prediction was $1,330.62
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/TestPrediction83605.png" width="500">
+
+The graph below shows the final model and the predicted one year values based off of the current data we have. The output below the graph shows the price predicted and the low/high predictions for the 95% confidence interval. Using these values the 1 year ROI as well as the low/high 1 year ROI was calculated.
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/FinalModel83605.png" width="500">
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/83605Results.png" width="500">
-(Insert training graph)
-(Insert Final graph)
+
 
 ### Zipcode 83350
+
+The graph below shows how the trained model did when predicting the test data. The test data was 6 months and we can see that the model was able to predict the price fairly well. The RMSE for this test prediction was $677.70
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/TestPrediction83350.png" width="500">
+
+The graph below shows the final model and the predicted one year values based off of the current data we have. The output below the graph shows the price predicted and the low/high predictions for the 95% confidence interval. Using these values the 1 year ROI as well as the low/high 1 year ROI was calculated.
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/FinalModel83350.png" width="500">
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/83350Results.png" width="500">
-(Insert training graph)
-(Insert Final graph)
+
 
 ### Zipcode 83845
+
+The graph below shows how the trained model did when predicting the test data. The test data was 6 months and we can see that the model started the prediction right when the prices were declining and the model started to predict higher values than the true values. The predicted values and real test values seem to re-converge towards the end of the 6 month prediction. Even though it was not able to predict the sudden drop in price the test values stayed within the 95% confidence interval shown within the green shaded area. The RMSE for this test prediction was $5,944.20
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/TestPrediction83845.png" width="500">
+
+The graph below shows the final model and the predicted one year values based off of the current data we have. The output below the graph shows the price predicted and the low/high predictions for the 95% confidence interval. Using these values the 1 year ROI as well as the low/high 1 year ROI was calculated.
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/FinalModel83845.png" width="500">
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/83845Results.png" width="500">
-(Insert training graph)
-(Insert Final graph)
+
 
 ### Zipcode 83347
+
+The graph below shows how the trained model did when predicting the test data. The test data was 6 months and we can see that initially the model started the predictions right when the prices took a sharp decline. The model was not able to predict this drop in price and the real values actually came out of the 95% confidence interval that is shown by the green shade. The real values and the predicted values do start to get closer towards the end of the 6 month prediction. The RMSE for this test prediction was $4,092.51
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/TestPrediction83347.png" width="500">
+
+The graph below shows the final model and the predicted one year values based off of the current data we have. The output below the graph shows the price predicted and the low/high predictions for the 95% confidence interval. Using these values the 1 year ROI as well as the low/high 1 year ROI was calculated.
+
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/FinalModel83347.png" width="500">
 <img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/83347Results.png" width="500">
-(Insert training graph)
-(Insert Final graph)
+
 
 ## Conclusion
 Out of the 110 zipcoes that we have data on the best zipcodes to invest in are: 83858, 83605, 83350, 83845, and 83347. The predicted 1 year ROI spans from 5.48%-19.23%. Investment in zipcode 83347 warrants caution since the low 1 year prediction shows that there is the possibility that we would lose money on the investment.
