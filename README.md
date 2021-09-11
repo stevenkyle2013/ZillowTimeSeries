@@ -34,7 +34,8 @@ Idaho data:
 - Used latest historic 5 year ROI to narrow down zipcodes to 25
 
 This is a map of the 110 zipcodes that we have data on. The color indicates the latest historic 5 year ROI.
-<img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/IdahoZips.png" width="500">
+<img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/IdahoAllZipLegend.png" width="500">
+<img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/ChoroplethAllZip.png" width="500">
 
 ## EDA
 Distribution of median housing prices for the top 25 zipcodes.
@@ -47,7 +48,8 @@ We can see that Idaho housing market was also affected by the 2008 crash. Becaus
 
 This is a map of the top 25 zipcodes. It is important to note that the color values for the latest historic 5 year ROI has changed since the previous map.
 
-<img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/25BestROIMap.png" width="500">
+<img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/Idaho25ZipLegend.png" width="500">
+<img src="https://github.com/stevenkyle2013/ZillowTimeSeries/blob/main/Pictures/Choropleth25Zip.png" width="500">
 
 
 
